@@ -1,0 +1,23 @@
+#n {
+  background-color: rgb(229, 231, 233);
+  border: solid 2px red;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#n img {
+  height: 100px;
+  width: 180px;
+  margin-bottom: 5px;
+  object-fit: cover;
+}
+
+.nav p {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 26px;
+}

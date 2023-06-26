@@ -1,6 +1,6 @@
 import React from 'react'
-
-export default function Example() {
+import "./WorkerLogin.css"
+export default function Worker({changeView}) {
     return (
       <form className="form">
       <p id="heading">Login</p>
@@ -12,15 +12,15 @@ export default function Example() {
       </div>
       <div className="field">
         <svg className="input-icon" xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" viewBox="0 0 16 16">
-          <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
+         
         </svg>
         <input placeholder="Password" className="input-field" type="password" />
       </div>
       <div className="btn">
-        <button className="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-        <button className="button2">Sign Up</button>
+        <button className="button1" onClick={()=>changeView("oneworker")} >Login</button>
+        <button className="button2" onClick={()=>changeView("signup")}>Sign Up</button>
       </div>
-      <button className="button3">Forgot Password</button>
+
     </form>
   );
 }

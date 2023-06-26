@@ -1,0 +1,71 @@
+.container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #13121269;
+    border-radius: 25px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .inpdddut {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #1aa3bb;
+    border-radius: 5px;
+    width: 100%;
+ 
+  }
+  
+  .inpdddut{
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .inpdddut[type="submit"]:hover {
+    background-color: #006F8F;
+  }
+      /****************************************************************************/
+      form {
+        display: flex;
+
+        align-items: center;
+        max-width: 400px;
+        margin: 0 auto;
+        justify-content:center;
+        flex-wrap: wrap;
+      }
+      
+      label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+      
+   
+      .text {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+      }
+      
+      .submit {
+        align-content: end;
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+      }

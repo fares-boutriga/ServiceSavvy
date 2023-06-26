@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .profile {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .profile-bio {
+    margin-top: 20px;
+  }
+  .one{
+    border-top: 50px;
+  }
