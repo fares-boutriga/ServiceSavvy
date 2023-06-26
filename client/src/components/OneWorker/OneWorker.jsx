@@ -6,9 +6,9 @@ function OneWorker({data}) {
   return (
   
     <div className='one'>
-      {console.log(data)}
+      {console.log("hi",data)}
         {data.map((e)=>(
-         <div className="profile">
+         <div className="profile" key={e._id}>
          <img
            className="profile-image"
            src="https://res.cloudinary.com/dt7t7wjql/image/upload/v1687750624/e50uwamyjhv1qctafvje.jpg"

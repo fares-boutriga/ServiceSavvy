@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./WorkerLogin.css"
-export default function Worker({changeView}) {
+export default function Worker({changeView, login}) {
+  const[pass,setPass]=useState("")
     return (
       <form className="form">
       <p id="heading">Login</p>
@@ -14,10 +15,10 @@ export default function Worker({changeView}) {
         <svg className="input-icon" xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" viewBox="0 0 16 16">
          
         </svg>
-        <input placeholder="Password" className="input-field" type="password" />
+        <input placeholder="Password" className="input-field" type="password" onChange={(e)=>{setPass(e.target.value)}}value={pass} />
       </div>
       <div className="btn">
-        <button className="button1" onClick={()=>changeView("oneworker")} >Login</button>
+        <button className="button1" onClick={()=>{login(pass)}} >Login</button>
         <button className="button2" onClick={()=>changeView("signup")}>Sign Up</button>
       </div>
 

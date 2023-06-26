@@ -48,9 +48,9 @@ function SignUp() {
   return (
    
     <div>
-      <div className="container">
+     
         <div>
-          <label>Choose a file:</label>
+          <label className="container" >Choose a file:</label>
           <input
             className="inpdddut"
             type="file"
@@ -61,7 +61,7 @@ function SignUp() {
           </button>
           
         </div>
-        <div>
+        <div className="form">
           <label>
             Name:
             <input className='text' type="text" onChange={(e)=>setName(e.target.value)} value={name}  />
@@ -100,7 +100,7 @@ function SignUp() {
           <button className='text' onClick={()=>addWorker().then(()=>{alert("done")})}>Submit</button>
      
         </div>
-      </div>
+    
       {console.log(imgUrl)}
     </div>
   );

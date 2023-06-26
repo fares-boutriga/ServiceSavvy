@@ -4,6 +4,9 @@
     padding: 20px;
     background-color: #13121269;
     border-radius: 25px;
+    margin-top: 128px;
+    display: grid;
+    grid-gap:3rem
   }
   
   label {
@@ -35,9 +38,9 @@
     background-color: #006F8F;
   }
       /****************************************************************************/
-      form {
+      .form {
         display: flex;
-
+        
         align-items: center;
         max-width: 400px;
         margin: 0 auto;

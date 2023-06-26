@@ -12,14 +12,22 @@ import AllWorker from './components/AllWorker/AllWorker.jsx'
 
 function App() {
   const [data,setData]=useState([])
-  const [view,setView]=useState('allworker')
+  const [view,setView]=useState('home')
   
   useEffect(()=>{
     axios.get("/api/workers")
     .then((res)=>setData(res.data))
     .catch(err=>{console.log(err)})
   },[])
-
+const login=(pass)=>{
+data.map((e,i)=>{
+  if (e.password===pass){
+    setData([data[i]])
+    changeView("oneworker")
+  }
+  else{alert('rong password')}
+})
+}
   const changeView=(view)=> {
      setView(view)
    }
@@ -27,7 +35,7 @@ function App() {
      if (view === "home") {
         return <Home changeView={changeView}/>
      } else if (view === "login") {
-      return <WorkerLogin changeView={changeView}  />;
+      return <WorkerLogin  data={data}  login={login}  />;
    } else if (view === "signup") {
      return   <SignUp/>
    }
